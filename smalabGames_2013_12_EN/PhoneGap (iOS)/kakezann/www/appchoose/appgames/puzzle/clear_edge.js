@@ -47,7 +47,7 @@ var symbols = {
             id:'Text2',
             type:'text',
             rect:['57px','180px','951px','246px','auto','auto'],
-            text:"オールステージクリア！！",
+            text:"All Stage Clear!!!",
             align:"left",
             font:['\'ヒラギノ角ゴ Pro W3\', \'Hiragino Kaku Gothic Pro\', メイリオ, Meiryo, ＭＳＰゴシック, \'MS PGothic\', sans-serif',72,"rgba(255,0,56,1.00)","600","none","normal"],
             transform:[[],['-4'],[],['1.066','1.235']]
@@ -71,7 +71,7 @@ var symbols = {
             id:'Text',
             type:'text',
             rect:['895px','707px','109px','49px','auto','auto'],
-            text:"もどる",
+            text:"Back",
             align:"center",
             font:['\'ヒラギノ角ゴ Pro W3\', \'Hiragino Kaku Gothic Pro\', \'メイリオ\', Meiryo, \'ＭＳＰゴシック\', MS PGothic, sans-serif',24,"rgba(0,0,0,1)","normal","none",""]
          }],
@@ -81,11 +81,9 @@ var symbols = {
       },
    states: {
       "Base State": {
-         "${_ponta2}": [
-            ["style", "top", '416px'],
-            ["transform", "scaleY", '0.56375'],
-            ["style", "left", '172px'],
-            ["transform", "scaleX", '0.66224']
+         "${_haikei}": [
+            ["style", "left", '0px'],
+            ["style", "top", '0px']
          ],
          "${_RoundRect}": [
             ["style", "top", '703px'],
@@ -94,36 +92,9 @@ var symbols = {
          ],
          "${_Text}": [
             ["style", "height", '49px'],
+            ["style", "top", '707px'],
             ["style", "left", '895px'],
-            ["style", "text-align", 'center'],
-            ["style", "top", '707px']
-         ],
-         "${_Text2}": [
-            ["transform", "rotateZ", '-4deg'],
-            ["color", "color", 'rgba(255,0,56,1.00)'],
-            ["style", "font-weight", '600'],
-            ["style", "left", '57px'],
-            ["style", "font-size", '72px'],
-            ["style", "top", '180px'],
-            ["transform", "scaleY", '1.23483'],
-            ["transform", "scaleX", '1.06603'],
-            ["style", "width", '951px']
-         ],
-         "${_Stage}": [
-            ["color", "background-color", 'rgba(255,255,255,1)'],
-            ["style", "width", '1024px'],
-            ["style", "height", '768px'],
-            ["style", "overflow", 'hidden']
-         ],
-         "${_Rectangle}": [
-            ["color", "background-color", 'rgba(255,253,253,1.00)'],
-            ["style", "border-bottom-left-radius", [31,31], {valueTemplate:'@@0@@px @@1@@px'} ],
-            ["style", "top", '142px'],
-            ["style", "border-bottom-right-radius", [31,31], {valueTemplate:'@@0@@px @@1@@px'} ],
-            ["style", "left", '12px'],
-            ["transform", "rotateZ", '-5deg'],
-            ["style", "border-top-right-radius", [31,31], {valueTemplate:'@@0@@px @@1@@px'} ],
-            ["style", "border-top-left-radius", [31,31], {valueTemplate:'@@0@@px @@1@@px'} ]
+            ["style", "text-align", 'center']
          ],
          "${_smako_3}": [
             ["style", "top", '225px'],
@@ -133,9 +104,38 @@ var symbols = {
             ["style", "left", '141px'],
             ["style", "width", '979px']
          ],
-         "${_haikei}": [
-            ["style", "left", '0px'],
-            ["style", "top", '0px']
+         "${_Stage}": [
+            ["color", "background-color", 'rgba(255,255,255,1)'],
+            ["style", "overflow", 'hidden'],
+            ["style", "height", '768px'],
+            ["style", "width", '1024px']
+         ],
+         "${_Rectangle}": [
+            ["style", "top", '142px'],
+            ["style", "border-bottom-left-radius", [31,31], {valueTemplate:'@@0@@px @@1@@px'} ],
+            ["style", "border-top-left-radius", [31,31], {valueTemplate:'@@0@@px @@1@@px'} ],
+            ["style", "border-bottom-right-radius", [31,31], {valueTemplate:'@@0@@px @@1@@px'} ],
+            ["style", "border-top-right-radius", [31,31], {valueTemplate:'@@0@@px @@1@@px'} ],
+            ["transform", "rotateZ", '-5deg'],
+            ["style", "left", '12px'],
+            ["color", "background-color", 'rgba(255,253,253,1.00)']
+         ],
+         "${_Text2}": [
+            ["transform", "rotateZ", '-4deg'],
+            ["color", "color", 'rgba(255,0,56,1.00)'],
+            ["style", "font-weight", '600'],
+            ["style", "left", '57px'],
+            ["style", "font-size", '72px'],
+            ["style", "top", '180px'],
+            ["transform", "scaleY", '1.23483'],
+            ["style", "width", '951px'],
+            ["transform", "scaleX", '1.06603']
+         ],
+         "${_ponta2}": [
+            ["style", "top", '416px'],
+            ["transform", "scaleX", '0.66224'],
+            ["transform", "scaleY", '0.56375'],
+            ["style", "left", '172px']
          ]
       }
    },
